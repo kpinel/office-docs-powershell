@@ -774,5 +774,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
+When using this cmdlet in an Azure runbook, ensure that you also have the following modules installed, including any dependencies required by these modules
+- PowerShellGet
+- PackageManagement
+If these modules aren't present, you'll receive the following message
+New-EXOModule : The term 'Update-ModuleManifest' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
 
 ## RELATED LINKS
